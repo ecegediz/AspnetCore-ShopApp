@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShopApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <style>
+        /* Menü sabit olduğu için içeriğin menünün altında kalmasını önler */
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body style="padding-top: 80px;">
+    <partial name="_navbar" />
+
+    <div class="container mb-5">
+        @RenderBody()
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    @* Validation scriptlerini buraya çağırıyoruz *@
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
